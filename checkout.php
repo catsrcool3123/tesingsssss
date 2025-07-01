@@ -48,7 +48,7 @@
                 $pname = mysqli_real_escape_string($con, $item['productName']);
                 $imgQuery = mysqli_query($con, "SELECT PImage FROM product WHERE PName = '$pname' LIMIT 1");
                 $imgRow = mysqli_fetch_assoc($imgQuery);
-                $imgSrc = $imgRow ? "../admin/product/" . htmlspecialchars($imgRow['PImage']) : "no-image.png";
+                $imgSrc = $imgRow ? "admin/product/" . htmlspecialchars($imgRow['PImage']) : "no-image.png";
 
                 $unitPrice = $item['productPrice'];
                 $quantity = $item['productQuantity'];

@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-5">
-            <img src="../admin/product/<?php echo htmlspecialchars($product['PImage']); ?>" class="img-fluid" alt="<?php echo htmlspecialchars($product['PName']); ?>">
+            <img src="admin/product/<?php echo htmlspecialchars($product['PImage']); ?>" class="img-fluid" alt="<?php echo htmlspecialchars($product['PName']); ?>">
         </div>
         <div class="col-md-7">
             <h2><?php echo htmlspecialchars($product['PName']); ?></h2>

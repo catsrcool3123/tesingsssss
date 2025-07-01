@@ -87,7 +87,7 @@
 
                                 <div class='card' style='width: 18rem;'>
                                     <a href='product_details.php?id={$row['ID']}' class='text-decoration-none text-dark'>    
-                                        <img src='../admin/product/{$row['PImage']}' class='card-img-top'>    
+                                        <img src='admin/product/{$row['PImage']}' class='card-img-top'>    
                                     </a>
                                     
                                     <form action='Insertcart.php' method='POST'>
